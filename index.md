@@ -258,6 +258,15 @@
                     <li>Integrated REST APIs for operations such as POST, GET, and UPDATE.</li>
                 </ul>
             </div>
+            <div class="card">
+                <h3>Offline Mobile App Developer - VhEggCount</h3>
+                <p>Self-Project (Date)</p> <!-- Replace with actual date if applicable -->
+                <ul>
+                    <li>Developed an offline mobile application using .NET MAUI to track egg counts efficiently.</li>
+                    <li>Implemented functionality for reading file data, performing validation, and storing results.</li>
+                    <li>Designed the application to save files in internal storage as Excel format.</li>
+                </ul>
+            </div>
         </div>
 
         <div id="education" class="tab-content">
