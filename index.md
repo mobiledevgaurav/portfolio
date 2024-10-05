@@ -214,7 +214,7 @@
                 <ul>
                     <li><i class="fas fa-envelope"></i>Email: <a href="mailto:gaurav.patil97@outlook.com">gaurav.patil97@outlook.com</a></li>
                     <li><i class="fas fa-phone"></i>Phone: 9595402012</li>
-                    <li><i class="fas fa-map-marker-alt"></i>Location: Jalgaon, India</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Location: Pune, India</li>
                     <li><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://linkedin.com/in/gaurav-patil-b6bb96187">linkedin.com/in/gaurav-patil</a></li>
                 </ul>
             </div>
