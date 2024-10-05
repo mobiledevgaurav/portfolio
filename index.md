@@ -11,16 +11,16 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            background-image: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft gradient background */
+            background-image: linear-gradient(to right, #e0eafc, #cfdef3);
         }
 
         .resume-container {
             max-width: 1000px;
             margin: 30px auto;
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            background: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         .tabs {
@@ -31,12 +31,12 @@
         }
 
         .tabs button {
-            background-color: #8e44ad; /* Purple color for tabs */
+            background-color: #8e44ad;
             color: white;
             border: none;
             padding: 15px 20px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s; /* Added transform for animation */
+            transition: background-color 0.3s, transform 0.3s;
             font-size: 16px;
             flex: 1;
             margin: 5px;
@@ -46,12 +46,12 @@
         }
 
         .tabs button:hover {
-            background-color: #9b59b6; /* Lighter purple on hover */
-            transform: translateY(-2px); /* Slight lift on hover */
+            background-color: #9b59b6;
+            transform: translateY(-2px);
         }
 
         .tabs button.active {
-            background-color: #6f2c91; /* Darker purple for active state */
+            background-color: #6f2c91;
         }
 
         .tab-content {
@@ -87,7 +87,7 @@
         }
 
         h3 {
-            color: #8e44ad; /* Purple color for section titles */
+            color: #8e44ad;
             margin-top: 0;
         }
 
@@ -100,17 +100,17 @@
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            transition: transform 0.3s; /* Added transition for card effect */
+            transition: transform 0.3s;
         }
 
         ul li:hover {
-            transform: translateX(5px); /* Slight movement on hover */
+            transform: translateX(5px);
         }
 
         ul li i {
             margin-right: 10px;
             color: #3498db;
-            font-size: 1.5em; /* Increased icon size */
+            font-size: 1.5em;
         }
 
         .section {
@@ -122,7 +122,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .contact a {
@@ -213,7 +213,7 @@
         <div id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="card">
-                <p>"Experienced software developer with over 2 years of proven expertise seeking a challenging position to leverage my strong coding and problem-solving skills. I am eager to contribute to a dynamic team and drive impactful solutions."</p>
+                <p>"I am an experienced software developer with over 2 years of proven expertise. I am seeking a challenging position where I can leverage my strong coding and problem-solving skills. I am eager to contribute to a dynamic team and drive impactful solutions."</p>
             </div>
             <div class="section contact">
                 <h3>Contact</h3>
@@ -245,9 +245,9 @@
                 <h3>Xamarin Developer - Incision</h3>
                 <p>WAi Technologies, Pune (05/2022 - 11/2023)</p>
                 <ul>
-                    <li>Worked on device responsiveness for mobile applications on Android and iOS.</li>
-                    <li>Implemented REST APIs and API calling, ensuring data binding with MVVM architecture.</li>
-                    <li>Developed various UI components such as checkboxes, date pickers, and sliders.</li>
+                    <li>Developed responsive mobile applications for both Android and iOS platforms.</li>
+                    <li>Implemented REST APIs and managed API calls, ensuring effective data binding with MVVM architecture.</li>
+                    <li>Created various UI components, including checkboxes, date pickers, and sliders.</li>
                 </ul>
             </div>
             <div class="card">
@@ -265,27 +265,24 @@
             <div class="card">
                 <h3>Bachelor of Engineering</h3>
                 <p>Pravara Rural Engineering College, Loni (2016 - 2021)</p>
-                <p>Information Technology - 70.80%</p>
+                <p>Degree in Information Technology - 70.80%</p>
             </div>
         </div>
     </div>
 
     <script>
         function openTab(evt, tabName) {
-            // Hide all tab contents
             var tabContent = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabContent.length; i++) {
                 tabContent[i].style.display = "none";
                 tabContent[i].classList.remove("active");
             }
 
-            // Remove active class from all tab buttons
             var tabLinks = document.getElementsByClassName("tab-link");
             for (var i = 0; i < tabLinks.length; i++) {
                 tabLinks[i].classList.remove("active");
             }
 
-            // Show the current tab, and add an "active" class to the clicked tab button
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.classList.add("active");
         }
