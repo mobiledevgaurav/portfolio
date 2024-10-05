@@ -1,10 +1,61 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Gaurav Patil</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="resume-container">
@@ -17,6 +68,7 @@
             <p>Phone: 9595402012</p>
             <p>Location: Jalgaon, India</p>
             <p>LinkedIn: <a href="https://linkedin.com/in/gaurav-patil-b6bb96187">linkedin.com/in/gaurav-patil</a></p>
+            <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p> <!-- Website added here -->
         </div>
 
         <section class="skills">
