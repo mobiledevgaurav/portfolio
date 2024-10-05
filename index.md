@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +13,7 @@
             padding: 0;
             background-color: #f4f4f4;
             background-image: linear-gradient(to right, #e0eafc, #cfdef3);
+            scroll-behavior: smooth; /* Enable smooth scrolling */
         }
 
         .resume-container {
@@ -37,7 +39,7 @@
             padding: 15px 20px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
-            font-size: 16px;
+            font-size: 18px; /* Increased font size */
             flex: 1;
             margin: 5px;
             border-radius: 8px;
@@ -56,22 +58,13 @@
 
         .tab-content {
             display: none;
-            animation: fadeIn 0.5s;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
         }
 
         .tab-content.active {
             display: block;
-            animation: slideIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            opacity: 1; /* Fade in */
         }
 
         h1 {
@@ -81,7 +74,7 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 26px; /* Increased font size */
             color: #2980b9;
             margin-bottom: 20px;
         }
@@ -89,6 +82,7 @@
         h3 {
             color: #8e44ad;
             margin-top: 0;
+            font-size: 20px; /* Increased font size */
         }
 
         ul {
@@ -148,7 +142,7 @@
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 22px; /* Adjusted for better clarity */
             }
 
             .tabs {
@@ -157,7 +151,7 @@
 
             .tabs button {
                 padding: 10px;
-                font-size: 14px;
+                font-size: 16px; /* Adjusted for better clarity */
             }
 
             .card {
@@ -165,7 +159,7 @@
             }
 
             ul li {
-                font-size: 14px;
+                font-size: 14px; /* Adjusted for better clarity */
             }
         }
 
@@ -179,11 +173,11 @@
             }
 
             h2 {
-                font-size: 18px;
+                font-size: 20px; /* Adjusted for better clarity */
             }
 
             .tabs button {
-                font-size: 12px;
+                font-size: 14px; /* Adjusted for better clarity */
                 padding: 8px;
             }
 
@@ -192,7 +186,7 @@
             }
 
             ul li {
-                font-size: 12px;
+                font-size: 12px; /* Adjusted for better clarity */
             }
         }
     </style>
@@ -260,7 +254,7 @@
             </div>
         </div>
 
-        <div id="education" class="tab-content">
+                <div id="education" class="tab-content">
             <h2>Education</h2>
             <div class="card">
                 <h3>Bachelor of Engineering</h3>
@@ -274,8 +268,8 @@
         function openTab(evt, tabName) {
             var tabContent = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
                 tabContent[i].classList.remove("active");
+                tabContent[i].style.display = "none"; // Hide all tabs
             }
 
             var tabLinks = document.getElementsByClassName("tab-link");
@@ -283,7 +277,9 @@
                 tabLinks[i].classList.remove("active");
             }
 
+            // Show the current tab and add active class to the button
             document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
     </script>
