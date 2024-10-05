@@ -213,7 +213,7 @@
         <div id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="card">
-                <p>"Experienced software developer with 2.3 years of proven expertise seeking a higher-level position to leverage strong coding and problem-solving skills. Eager to contribute to a dynamic team and drive impactful solutions."</p>
+                <p>"Experienced software developer with over 2 years of proven expertise seeking a challenging position to leverage my strong coding and problem-solving skills. I am eager to contribute to a dynamic team and drive impactful solutions."</p>
             </div>
             <div class="section contact">
                 <h3>Contact</h3>
@@ -242,16 +242,16 @@
         <div id="experience" class="tab-content">
             <h2>Work Experience</h2>
             <div class="card">
-                <h3>Incision (Xamarin Developer)</h3>
+                <h3>Xamarin Developer - Incision</h3>
                 <p>WAi Technologies, Pune (05/2022 - 11/2023)</p>
                 <ul>
-                    <li>Worked on different device responsiveness for mobile applications on Android and iOS.</li>
-                    <li>Implemented REST APIs, API calling, data binding with MVVM architecture.</li>
-                    <li>Developed various views like checkboxes, date pickers, sliders, etc.</li>
+                    <li>Worked on device responsiveness for mobile applications on Android and iOS.</li>
+                    <li>Implemented REST APIs and API calling, ensuring data binding with MVVM architecture.</li>
+                    <li>Developed various UI components such as checkboxes, date pickers, and sliders.</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Live Broiler Booking (Xamarin Developer)</h3>
+                <h3>Xamarin Developer - Live Broiler Booking</h3>
                 <p>Venky's India Ltd, Pune (12/2023 - Present)</p>
                 <ul>
                     <li>Developed role-based permissions for administrators and users.</li>
@@ -265,7 +265,7 @@
             <div class="card">
                 <h3>Bachelor of Engineering</h3>
                 <p>Pravara Rural Engineering College, Loni (2016 - 2021)</p>
-                <p>Information Technologies - 70.80%</p>
+                <p>Information Technology - 70.80%</p>
             </div>
         </div>
     </div>
