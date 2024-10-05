@@ -222,13 +222,16 @@
 
         <div id="skills" class="tab-content">
             <h2>Skills</h2>
-            <div class="card">
+
+           <div class="card">
                 <ul>
-                    <li><i class="fas fa-code"></i>Xamarin, MAUI, Dart</li>
-                    <li><i class="fas fa-code"></i>XML, C#</li>
-                    <li><i class="fas fa-code"></i>MVVM Architecture</li>
-                    <li><i class="fas fa-mobile-alt"></i>Xamarin Android, iOS</li>
-                    <li><i class="fas fa-network-wired"></i>RESTful API, Swagger, Postman, Git</li>
+                    <li><i class="fas fa-code"></i>.NET MAUI</li>
+                    <li><i class="fas fa-code"></i>Xamarin</li>
+                    <li><i class="fas fa-code"></i>C#</li>
+                    <li><i class="fas fa-network-wired"></i>REST APIs</li>
+                    <li><i class="fas fa-file-code"></i>XML</li>
+                    <li>
+<i class="fab fa-github"></i>GitHub</li>
                 </ul>
             </div>
         </div>
