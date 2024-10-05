@@ -26,6 +26,7 @@
             display: flex;
             justify-content: space-around;
             margin-bottom: 20px;
+            flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
         }
 
         .tabs button {
@@ -36,6 +37,8 @@
             cursor: pointer;
             transition: background-color 0.3s;
             font-size: 16px;
+            flex: 1;
+            margin: 5px;
         }
 
         .tabs button:hover {
@@ -114,6 +117,66 @@
             text-decoration: underline;
         }
 
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .resume-container {
+                padding: 15px;
+                margin: 20px;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tabs button {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            ul li {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .resume-container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .tabs button {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .card {
+                padding: 8px;
+            }
+
+            ul li {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
