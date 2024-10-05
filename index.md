@@ -1,300 +1,86 @@
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Gaurav Patil</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            background-image: linear-gradient(to right, #e0eafc, #cfdef3);
-        }
-
-        .resume-container {
-            max-width: 1000px;
-            margin: 30px auto;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .tabs {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .tabs button {
-            background-color: #8e44ad;
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 16px;
-            flex: 1;
-            margin: 5px;
-            border-radius: 8px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tabs button:hover {
-            background-color: #9b59b6;
-            transform: translateY(-2px);
-        }
-
-        .tabs button.active {
-            background-color: #6f2c91;
-        }
-
-        .tab-content {
-            display: none;
-            animation: fadeIn 0.5s;
-        }
-
-        .tab-content.active {
-            display: block;
-            animation: slideIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            color: #2c3e50;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #2980b9;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            color: #8e44ad;
-            margin-top: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            transition: transform 0.3s;
-        }
-
-        ul li:hover {
-            transform: translateX(5px);
-        }
-
-        ul li i {
-            margin-right: 10px;
-            color: #3498db;
-            font-size: 1.5em;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .card {
-            background-color: #ecf0f1;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .resume-container {
-                padding: 20px;
-                margin: 20px;
-                max-width: 100%;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .tabs {
-                flex-direction: column;
-            }
-
-            .tabs button {
-                padding: 10px;
-                font-size: 14px;
-            }
-
-            .card {
-                padding: 15px;
-            }
-
-            ul li {
-                font-size: 14px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .resume-container {
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 18px;
-            }
-
-            .tabs button {
-                font-size: 12px;
-                padding: 8px;
-            }
-
-            .card {
-                padding: 10px;
-            }
-
-            ul li {
-                font-size: 12px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Patil - Resume</title>
+  <link rel="stylesheet" href="style.css">  <style>
+    /* Basic styles for responsiveness */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="resume-container">
-        <h1>Gaurav Patil</h1>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab-link active" onclick="openTab(event, 'about')">About Me</button>
-            <button class="tab-link" onclick="openTab(event, 'skills')">Skills</button>
-            <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
-            <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
-        </div>
-
-        <!-- Tab Content -->
-        <div id="about" class="tab-content active">
-            <h2>About Me</h2>
-            <div class="card">
-                <p>"I am an experienced software developer with over 2 years of proven expertise. I am seeking a challenging position where I can leverage my strong coding and problem-solving skills. I am eager to contribute to a dynamic team and drive impactful solutions."</p>
-            </div>
-            <div class="section contact">
-                <h3>Contact</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i>Email: <a href="mailto:gaurav.patil97@outlook.com">gaurav.patil97@outlook.com</a></li>
-                    <li><i class="fas fa-phone"></i>Phone: 9595402012</li>
-                    <li><i class="fas fa-map-marker-alt"></i>Location: Jalgaon, India</li>
-                    <li><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://linkedin.com/in/gaurav-patil-b6bb96187">linkedin.com/in/gaurav-patil</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="skills" class="tab-content">
-            <h2>Skills</h2>
-            <div class="card">
-                <ul>
-                    <li><i class="fas fa-code"></i>Xamarin, MAUI, Dart</li>
-                    <li><i class="fas fa-code"></i>XML, C#</li>
-                    <li><i class="fas fa-code"></i>MVVM Architecture</li>
-                    <li><i class="fas fa-mobile-alt"></i>Xamarin Android, iOS</li>
-                    <li><i class="fas fa-network-wired"></i>RESTful API, Swagger, Postman, Git</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="experience" class="tab-content">
-            <h2>Work Experience</h2>
-            <div class="card">
-                <h3>Xamarin Developer - Incision</h3>
-                <p>WAi Technologies, Pune (05/2022 - 11/2023)</p>
-                <ul>
-                    <li>Developed responsive mobile applications for both Android and iOS platforms.</li>
-                    <li>Implemented REST APIs and managed API calls, ensuring effective data binding with MVVM architecture.</li>
-                    <li>Created various UI components, including checkboxes, date pickers, and sliders.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Xamarin Developer - Live Broiler Booking</h3>
-                <p>Venky's India Ltd, Pune (12/2023 - Present)</p>
-                <ul>
-                    <li>Developed role-based permissions for administrators and users.</li>
-                    <li>Integrated REST APIs for operations such as POST, GET, and UPDATE.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Offline Mobile App Developer - VhEggCount</h3>
-                <p>Self-Project (Date)</p> <!-- Replace with actual date if applicable -->
-                <ul>
-                    <li>Developed an offline mobile application using .NET MAUI to track egg counts efficiently.</li>
-                    <li>Implemented functionality for reading file data, performing validation, and storing results.</li>
-                    <li>Designed the application to save files in internal storage as Excel format.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="education" class="tab-content">
-            <h2>Education</h2>
-            <div class="card">
-                <h3>Bachelor of Engineering</h3>
-                <p>Pravara Rural Engineering College, Loni (2016 - 2021)</p>
-                <p>Degree in Information Technology - 70.80%</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function openTab(evt, tabName) {
-            var tabContent = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
-                tabContent[i].classList.remove("active");
-            }
-
-            var tabLinks = document.getElementsByClassName("tab-link");
-            for (var i = 0; i < tabLinks.length; i++) {
-                tabLinks[i].classList.remove("active");
-            }
-
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
+  <div class="container">
+    <header>
+      <h1>Gaurav Patil</h1>
+      <p>Pune, India | Phone: 9595402012 | Email: gaurav.patil97@icloud.com</p>
+      <a href="linkedin.com/in/gaurav-patil-b6bb96187">LinkedIn</a>
+    </header>
+    <main>
+      <section id="objective">
+        <h2>Objective</h2>
+        <p>Driven software developer with over 2 years of experience dedicated to creating secure, high-quality, and high-performance applications. Passionate about leveraging object-oriented programming principles to promote code reusability while maintaining a focus on small application size.</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C#</li>
+          <li>Dart</li>
+          <li>XML</li>
+        </ul>
+        <h3>Frameworks</h3>
+        <ul>
+          <li>Xamarin</li>
+          <li>.NET MAUI</li>
+        </ul>
+        <h3>Architecture</h3>
+        <p>MVVM</p>
+        <h3>Platforms</h3>
+        <p>Android, iOS</p>
+        <h3>Tools</h3>
+        <p>RESTful API, Swagger, Postman, Git</p>
+      </section>
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Xamarin Developer - WAi Technologies, Pune (May 2022 - November 2023)</h3>
+        <ul>
+          <li>Developed responsive mobile applications for both Android and iOS platforms.</li>
+          <li>Implemented REST APIs and managed API calls, ensuring effective data binding with MVVM architecture.</li>
+          <li>Created various UI components, including checkboxes, date pickers, and sliders.</li>
+        </ul>
+        <h3>Xamarin Developer - Venky's India Ltd, Pune (December 2023 - Present)</h3>
+        <ul>
+          <li>Developed role-based permissions for administrators and users.</li>
+          <li>Integrated REST APIs for operations such as POST, GET, and UPDATE.</li>
+        </ul>
+        <h3>Offline Mobile App Developer - VhEggCount (Self-Project) (Date)</h3>
+        <ul>
+          <li>Developed an offline mobile application using .NET MAUI to efficiently track egg counts.</li>
+          <li>Implemented functionality for reading file data, performing validation, and storing results.</li>
+          <li>Designed the application to save files in internal storage as Excel format.</li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <h3>Bachelor of Engineering in Information Technology - Pravara Rural Engineering College, Loni (2016 - 2021)</h3>
+        <p>Percentage: 70.80%</p>
+      </section>
+    </main>
+    <footer>
+      <p>Contact: Email: gaurav.patil97@icloud.com | Phone: 9595402012 | Location: Pune, India</p>
+    </footer>
+  </div>
 </body>
 </html>
