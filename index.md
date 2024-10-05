@@ -1,32 +1,26 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Gaurav Patil</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            background-image: url('https://example.com/background.jpg'); /* Background image for body */
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+            background-image: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft gradient background */
         }
 
         .resume-container {
             max-width: 1000px;
             margin: 30px auto;
-            background: rgba(255, 255, 255, 0.8); /* White background with opacity */
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            position: relative;
-            background-image: url('https://example.com/overlay-pattern.png'); /* Optional background for the container */
-            background-size: cover;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
         }
 
         .tabs {
@@ -37,41 +31,27 @@
         }
 
         .tabs button {
-            background-color: #2c3e50;
+            background-color: #8e44ad; /* Purple color for tabs */
             color: white;
             border: none;
             padding: 15px 20px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s; /* Added transform for animation */
             font-size: 16px;
             flex: 1;
             margin: 5px;
+            border-radius: 8px;
             position: relative;
             overflow: hidden;
         }
 
         .tabs button:hover {
-            background-color: #3498db;
+            background-color: #9b59b6; /* Lighter purple on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
         }
 
         .tabs button.active {
-            background-color: #2980b9;
-        }
-
-        .tabs button::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 100%;
-            width: 300%;
-            height: 300%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.5s ease;
-            transform: translateX(-50%) rotate(45deg);
-        }
-
-        .tabs button:hover::before {
-            top: -100%;
+            background-color: #6f2c91; /* Darker purple for active state */
         }
 
         .tab-content {
@@ -107,7 +87,8 @@
         }
 
         h3 {
-            color: #8e44ad; /* Changed from green to dark purple */
+            color: #8e44ad; /* Purple color for section titles */
+            margin-top: 0;
         }
 
         ul {
@@ -119,11 +100,17 @@
             margin-bottom: 10px;
             display: flex;
             align-items: center;
+            transition: transform 0.3s; /* Added transition for card effect */
+        }
+
+        ul li:hover {
+            transform: translateX(5px); /* Slight movement on hover */
         }
 
         ul li i {
             margin-right: 10px;
             color: #3498db;
+            font-size: 1.5em; /* Increased icon size */
         }
 
         .section {
@@ -132,10 +119,10 @@
 
         .card {
             background-color: #ecf0f1;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
         }
 
         .contact a {
@@ -151,7 +138,7 @@
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             .resume-container {
-                padding: 15px;
+                padding: 20px;
                 margin: 20px;
                 max-width: 100%;
             }
@@ -174,7 +161,7 @@
             }
 
             .card {
-                padding: 10px;
+                padding: 15px;
             }
 
             ul li {
@@ -184,7 +171,7 @@
 
         @media screen and (max-width: 480px) {
             .resume-container {
-                padding: 10px;
+                padding: 15px;
             }
 
             h1 {
@@ -201,7 +188,7 @@
             }
 
             .card {
-                padding: 8px;
+                padding: 10px;
             }
 
             ul li {
