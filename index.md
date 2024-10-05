@@ -207,7 +207,7 @@
         <div id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="card">
-                <p>"I am an experienced software developer with over 2 years of proven expertise. I am seeking a challenging position where I can leverage my strong coding and problem-solving skills. I am eager to contribute to a dynamic team and drive impactful solutions."</p>
+                <p>"I am a passionate mobile app developer dedicated to creating cutting-edge applications that prioritize security and sustainability. By leveraging object-oriented programming principles, I focus on streamlining code, optimizing app size, and maximizing reusability to deliver exceptional user experiences."</p>
             </div>
             <div class="section contact">
                 <h3>Contact</h3>
