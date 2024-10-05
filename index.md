@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         .resume-container {
@@ -18,20 +19,41 @@
             margin: 20px auto;
             background: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
 
-        h1, h2, h3 {
-            color: #333;
+        .resume-container:hover {
+            transform: translateY(-10px); /* Subtle hover animation */
         }
 
         h1 {
             font-size: 36px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #2980b9; /* Change color on hover */
         }
 
         h2 {
             font-size: 24px;
+            color: #2980b9;
             margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #27ae60;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        h3:hover {
+            color: #2ecc71; /* Lighter green on hover */
         }
 
         .contact {
@@ -39,21 +61,42 @@
         }
 
         .contact a {
-            color: #0073e6;
+            color: #3498db;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #2980b9;
         }
 
         section {
             margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02); /* Slight zoom on section hover */
         }
 
         ul {
             list-style-type: disc;
             margin-left: 20px;
+            color: #555;
         }
 
         ul li {
             margin-bottom: 5px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
         }
     </style>
 </head>
@@ -68,7 +111,7 @@
             <p>Phone: 9595402012</p>
             <p>Location: Jalgaon, India</p>
             <p>LinkedIn: <a href="https://linkedin.com/in/gaurav-patil-b6bb96187">linkedin.com/in/gaurav-patil</a></p>
-            <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p> <!-- Website added here -->
+            <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
         </div>
 
         <section class="skills">
