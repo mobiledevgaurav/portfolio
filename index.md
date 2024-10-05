@@ -26,7 +26,7 @@
             display: flex;
             justify-content: space-around;
             margin-bottom: 20px;
-            flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+            flex-wrap: wrap;
         }
 
         .tabs button {
@@ -39,6 +39,8 @@
             font-size: 16px;
             flex: 1;
             margin: 5px;
+            position: relative;
+            overflow: hidden;
         }
 
         .tabs button:hover {
@@ -49,6 +51,22 @@
             background-color: #2980b9;
         }
 
+        .tabs button::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.5s ease;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .tabs button:hover::before {
+            top: -100%;
+        }
+
         .tab-content {
             display: none;
             animation: fadeIn 0.5s;
@@ -56,11 +74,17 @@
 
         .tab-content.active {
             display: block;
+            animation: slideIn 0.5s ease-out;
         }
 
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         h1 {
@@ -76,7 +100,7 @@
         }
 
         h3 {
-            color: #27ae60;
+            color: #8e44ad; /* Changed from green to dark purple */
         }
 
         ul {
