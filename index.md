@@ -11,15 +11,22 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background-image: url('https://example.com/background.jpg'); /* Background image for body */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
 
         .resume-container {
             max-width: 1000px;
             margin: 30px auto;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.8); /* White background with opacity */
             padding: 20px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            position: relative;
+            background-image: url('https://example.com/overlay-pattern.png'); /* Optional background for the container */
+            background-size: cover;
         }
 
         .tabs {
@@ -228,7 +235,6 @@
                     <li><i class="fas fa-phone"></i>Phone: 9595402012</li>
                     <li><i class="fas fa-map-marker-alt"></i>Location: Jalgaon, India</li>
                     <li><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://linkedin.com/in/gaurav-patil-b6bb96187">linkedin.com/in/gaurav-patil</a></li>
-                    <li><i class="fas fa-globe"></i>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></li>
                 </ul>
             </div>
         </div>
